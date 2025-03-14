@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/2.0.6/pure-min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(68, 68, 129);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .pure-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .pure-form label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #555;
+        }
+        .pure-form input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .pure-button-primary {
+            width: 100%;
+            background: rgb(64, 64, 128);
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .pure-button-primary:hover {
+            background: rgb(32, 32, 83);
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #000000;
+            text-decoration: none;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background: #047857;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="pure-form">
+            <fieldset>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <label for="remember">
+                    <input id="remember" type="checkbox" /> Remember me
+                </label>
+                <button type="submit" class="pure-button pure-button-primary">Login</button>
+            </fieldset>
+        </form>
+        <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+</body>
+</html>
